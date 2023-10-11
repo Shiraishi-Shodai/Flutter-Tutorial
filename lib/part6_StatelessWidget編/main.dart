@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_base/part5_StatelessWidget%E7%B7%A8/banana_counter.dart';
+import 'package:flutter_base/part6_StatelessWidget%E7%B7%A8/banana_counter.dart';
 
 void main() {
   const bnn = BananaCounter(
