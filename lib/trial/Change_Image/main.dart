@@ -8,7 +8,7 @@ void main() {
   runApp(scope);
 }
 
-final imgNameProvider = StateProvider<String>((ref) => 'images/mona_lisa.jpg');
+final imgNameProvider = StateProvider<String>((ref) => 'assets/images/mona_lisa.jpg');
 
 class Animal extends ConsumerWidget {
   const Animal({super.key});
