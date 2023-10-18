@@ -39,12 +39,14 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      //現在のルート情報を提供するプロパティ
-      routeInformationProvider: router.routeInformationProvider,
-      //ルート文字列をルートオブジェクトに変換するプロパティ
-      routeInformationParser: router.routeInformationParser,
-      //画面遷移を管理するプロパティ
-      routerDelegate: router.routerDelegate,  
+      // //現在のルート情報を提供するプロパティ
+      // routeInformationProvider: router.routeInformationProvider,
+      // //ルート文字列をルートオブジェクトに変換するプロパティ
+      // routeInformationParser: router.routeInformationParser,
+      // //画面遷移を管理するプロパティ
+      // routerDelegate: router.routerDelegate,  
+
+      routerConfig: router,
     );
   }
 }
