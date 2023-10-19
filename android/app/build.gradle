@@ -49,6 +49,7 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        minSdkVersion 20 // Android SDK 20 以降を実行しているユーザーのみがアプリを利用できる
     }
 
     buildTypes {
