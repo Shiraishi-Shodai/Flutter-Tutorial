@@ -24,12 +24,12 @@ class PageB extends StatelessWidget {
           child: Text('前の画面へ', style: TextStyle(fontSize: 15)),
 
           // アロー関数で書かないと、このファイルが読み込まれた時に関数が実行されてしまう
-          onPressed: () => back(context),
+          onPressed: () => GoRouter.of(context).pop(),
           style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
         ),
         ElevatedButton(
           child: Text('次の画面へ', style: TextStyle(fontSize: 15)),
-          onPressed: () => push(context),
+          onPressed: () => GoRouter.of(context).push('/c'),
           style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
         )
       ],
@@ -45,7 +45,7 @@ class PageB extends StatelessWidget {
           child: btnContainer,
           width: 300,
           height: 100,
-          decoration: BoxDecoration(color: Colors.amber),
+          decoration: BoxDecoration(color: Colors.pink),
         )));
   }
 }
